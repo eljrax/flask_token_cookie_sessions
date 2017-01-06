@@ -1,0 +1,17 @@
+memcached:
+    image: memcached:latest
+    container_name: se_memcached
+
+session_example:
+    build: .
+    container_name: session_example
+    environment:
+        - SESSION_EXAMPLE_HOST=0.0.0.0
+        - SESSION_EXAMPLE_PORT=80
+        - SESSION_EXAMPLE_DATASTORE_URI=memcached:11211
+    links:
+        - memcached:memcached
+    volumes:
+        - ${PWD}/app:/app
+    ports:
+        - 127.0.0.1:9000:80

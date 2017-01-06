@@ -1,0 +1,16 @@
+Flask==0.12
+Jinja2==2.8.1
+MarkupSafe==0.23
+Werkzeug==0.11.15
+argparse==1.2.1
+click==6.6
+funcsigs==1.0.2
+itsdangerous==0.24
+linecache2==1.0.0
+mock==2.0.0
+pbr==1.10.0
+pylibmc==1.5.1
+six==1.10.0
+traceback2==1.4.0
+unittest2==1.1.0
+wsgiref==0.1.2
